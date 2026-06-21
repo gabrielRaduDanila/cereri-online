@@ -1,0 +1,79 @@
+'use client'
+
+import { Document, Page, Text, View, Image } from '@react-pdf/renderer'
+import { inregistreazaFonturi } from './fonts'
+import { stiluriComune, fmtData, gol, subsemnat, angajatGen } from './comun'
+
+inregistreazaFonturi()
+
+export type AdevAngajatorData = {
+  gen: 'M' | 'F' | ''
+  numeAngajat: string
+  cnp: string
+  functie: string
+  numeAngajator: string
+  tipAdeverinta: string
+  scop: string
+  oras: string
+  dataDocument: string
+  semnaturaDataUrl?: string | null
+}
+
+export default function AdevAngajatorPDF({
+  data,
+}: {
+  data: AdevAngajatorData
+}) {
+  return (
+    <Document>
+      <Page size="A4" style={stiluriComune.page}>
+        <View style={stiluriComune.antet}>
+          <Text>Către,</Text>
+          <Text>Departamentul Resurse Umane</Text>
+          <Text>{gol(data.numeAngajator, 30)}</Text>
+        </View>
+
+        <Text style={stiluriComune.titlu}>CERERE DE ELIBERARE ADEVERINȚĂ</Text>
+
+        <Text style={stiluriComune.paragraf}>
+          {subsemnat(data.gen)} {gol(data.numeAngajat, 30)}, având CNP{' '}
+          {gol(data.cnp, 13)}, {angajatGen(data.gen)} în cadrul{' '}
+          {gol(data.numeAngajator, 30)} pe funcția de {gol(data.functie, 20)},
+          prin prezenta vă rog să-mi eliberați o adeverință{' '}
+          {gol(data.tipAdeverinta, 20)}, necesară pentru{' '}
+          {gol(data.scop, 30)}.
+        </Text>
+
+        <Text style={stiluriComune.paragraf}>
+          Adeverința este necesară pentru a-mi sprijini demersurile menționate
+          mai sus. Vă rog să o eliberați în cel mai scurt timp posibil.
+        </Text>
+
+        <Text style={stiluriComune.paragraf}>
+          Vă mulțumesc.
+        </Text>
+
+        <View style={stiluriComune.semnaturaRand}>
+          <View style={stiluriComune.semnaturaCol}>
+            <Text style={stiluriComune.semnaturaEticheta}>Data:</Text>
+            <Text>{fmtData(data.dataDocument)}</Text>
+            <Text style={{ marginTop: 10 }}>
+              Localitatea: {gol(data.oras, 15)}
+            </Text>
+          </View>
+          <View style={stiluriComune.semnaturaCol}>
+            <Text style={stiluriComune.semnaturaEticheta}>Semnătura,</Text>
+            {data.semnaturaDataUrl ? (
+              <Image
+                src={data.semnaturaDataUrl}
+                style={stiluriComune.semnaturaImg}
+              />
+            ) : (
+              <Text>____________________</Text>
+            )}
+          </View>
+        </View>
+      </Page>
+    </Document>
+  )
+}
