@@ -15,6 +15,14 @@ export const CERERI: CerereMeta[] = [
       'Generează gratuit o cerere de demisie corectă, completată cu datele tale și descărcabilă instant ca PDF.',
   },
   {
+    slug: 'contract-inchiriere',
+    titlu: 'Contract de închiriere',
+    descriereScurta:
+      'Contract complet între proprietar și chiriaș, cu chirie, garanție și anexă proces-verbal.',
+    descriereSEO:
+      'Generează un contract de închiriere complet între proprietar și chiriaș, cu datele imobilului, perioada, chiria, garanția și anexa de proces-verbal de predare-primire.',
+  },
+  {
     slug: 'reziliere-telefonie',
     titlu: 'Cerere reziliere contract telefonie/internet',
     descriereScurta:
@@ -53,14 +61,6 @@ export const CERERI: CerereMeta[] = [
       'Cerere pentru atribuirea unui loc de parcare de reședință.',
     descriereSEO:
       'Model de cerere pentru obținerea unui loc de parcare de reședință de la primărie.',
-  },
-  {
-    slug: 'contract-inchiriere',
-    titlu: 'Contract de închiriere',
-    descriereScurta:
-      'Contract complet între proprietar și chiriaș, cu chirie, garanție și clauze.',
-    descriereSEO:
-      'Generează un contract de închiriere complet între proprietar și chiriaș, cu datele imobilului, perioada, chiria, garanția și clauzele standard.',
   },
   {
     slug: 'reziliere-chirie',
