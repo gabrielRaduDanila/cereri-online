@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import FeedbackForm from '@/components/FeedbackForm'
 
 export const metadata: Metadata = {
   title: 'Despre — Cereri Online',
@@ -133,6 +134,18 @@ export default function PaginaDespre() {
           Pentru contracte cu valoare mare, ia în considerare și autentificarea
           la notar.
         </p>
+      </section>
+
+      <section className="pt-6 border-t border-slate-200">
+        <h2 className="text-xl font-semibold text-slate-900 mb-2">
+          Feedback și sugestii
+        </h2>
+        <p className="text-slate-700 mb-5">
+          Lipsește o cerere de care ai avea nevoie? Ai găsit o eroare în textul
+          unui document? Ai o sugestie de îmbunătățire? Scrie-mi mai jos —
+          mesajele vin direct pe email-ul meu și citesc fiecare.
+        </p>
+        <FeedbackForm />
       </section>
 
       <div className="pt-6 border-t border-slate-200">
