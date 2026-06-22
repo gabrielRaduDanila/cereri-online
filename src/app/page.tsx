@@ -14,6 +14,31 @@ export default function Home() {
         </p>
       </section>
 
+      <section
+        aria-label="Notă privind confidențialitatea"
+        className="mb-8 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-slate-700"
+      >
+        <span
+          aria-hidden="true"
+          className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-700 text-xs font-bold text-white"
+        >
+          🔒
+        </span>
+        <p className="leading-snug">
+          <strong className="text-blue-900">
+            Datele tale nu sunt salvate nicăieri.
+          </strong>{' '}
+          Tot ce completezi rămâne doar în browser-ul tău, până închizi
+          fereastra. Zero cookies de tracking, zero cont, zero email cerut.{' '}
+          <Link
+            href="/despre"
+            className="underline decoration-blue-400 underline-offset-2 hover:text-blue-700"
+          >
+            Cum funcționează →
+          </Link>
+        </p>
+      </section>
+
       <section>
         <h2 className="text-xl font-semibold text-slate-900 mb-4">
           Alege tipul de cerere
