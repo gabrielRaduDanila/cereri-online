@@ -54,6 +54,7 @@ const campuri: Camp[] = [
   { nume: 'chirieLunara', eticheta: 'Chirie lunară (lei)', tip: 'number', obligatoriu: true },
   { nume: 'ziuaScadenta', eticheta: 'Ziua scadenței lunare', tip: 'number', obligatoriu: true, placeholder: '5', ajutor: 'Ex: 5 = până în data de 5 a lunii' },
   { nume: 'garantie', eticheta: 'Garanție (lei)', tip: 'number', obligatoriu: true, ajutor: 'Standard: 1-2 chirii' },
+  { nume: 'zileRestituireGarantie', eticheta: 'Zile pentru restituire garanție', tip: 'number', obligatoriu: true, placeholder: '30', ajutor: 'De la încetarea contractului. Uzual: 15-30 zile.' },
 
   {
     nume: 'utilitati',
@@ -67,7 +68,18 @@ const campuri: Camp[] = [
     ],
   },
   { nume: 'preaviz', eticheta: 'Termen preaviz (zile)', tip: 'number', obligatoriu: true, placeholder: '30' },
-  { nume: 'inventar', eticheta: 'Descriere stare imobil / inventar (opțional)', tip: 'textarea', placeholder: 'Mobilier, electrocasnice, stare zugrăveală etc.' },
+
+  // anexa - proces verbal
+  { nume: 'citireElectricitate', eticheta: 'Anexă — Citire energie electrică (kWh)', tip: 'text', placeholder: 'ex: 12534' },
+  { nume: 'citireGazNaturale', eticheta: 'Anexă — Citire gaze naturale (mc)', tip: 'text', placeholder: 'ex: 4521' },
+  { nume: 'citireApaRece', eticheta: 'Anexă — Citire apă rece (mc)', tip: 'text', placeholder: 'ex: 287' },
+  { nume: 'citireApaCalda', eticheta: 'Anexă — Citire apă caldă (mc)', tip: 'text', placeholder: 'ex: 142' },
+  { nume: 'numarChei', eticheta: 'Anexă — Număr chei predate', tip: 'number', placeholder: '2' },
+  { nume: 'starePereti', eticheta: 'Anexă — Stare pereți și zugrăveală', tip: 'textarea', placeholder: 'ex: Zugrăvire albă recentă, fără defecte vizibile.' },
+  { nume: 'starePardoseala', eticheta: 'Anexă — Stare pardoseală', tip: 'textarea', placeholder: 'ex: Parchet laminat în stare bună, mici zgârieturi în bucătărie.' },
+  { nume: 'mobilier', eticheta: 'Anexă — Inventar mobilier', tip: 'textarea', placeholder: 'ex: Canapea 3 locuri, masă living, 4 scaune, dulap dormitor, pat dublu cu saltea, birou, scaun birou, comodă hol.' },
+  { nume: 'electrocasnice', eticheta: 'Anexă — Inventar electrocasnice', tip: 'textarea', placeholder: 'ex: Frigider Beko, mașină de spălat Whirlpool, aragaz cu cuptor electric, microunde, hotă, fier de călcat.' },
+  { nume: 'observatii', eticheta: 'Anexă — Observații (opțional)', tip: 'textarea', placeholder: 'ex: Mic defect estetic ușa dulap dormitor, zgârietură geam baie. Restul în stare bună.' },
 
   { nume: 'oras', eticheta: 'Localitatea', tip: 'text', obligatoriu: true },
   { nume: 'dataDocument', eticheta: 'Data semnării contractului', tip: 'date', obligatoriu: true },
@@ -78,7 +90,11 @@ const initiale: Record<string, string> = {
   chirNume: '', chirCnp: '', chirCi: '', chirAdresa: '',
   imobAdresa: '', imobTip: '', imobSuprafata: '', imobCamere: '',
   dataStart: '', dataSfarsit: '', chirieLunara: '', ziuaScadenta: '', garantie: '',
-  utilitati: '', preaviz: '30', inventar: '',
+  zileRestituireGarantie: '30',
+  utilitati: '', preaviz: '30',
+  citireElectricitate: '', citireGazNaturale: '', citireApaRece: '', citireApaCalda: '',
+  numarChei: '', starePereti: '', starePardoseala: '',
+  mobilier: '', electrocasnice: '', observatii: '',
   oras: '',
   dataDocument: new Date().toISOString().slice(0, 10),
 }
@@ -94,7 +110,18 @@ export default function Client() {
       chirNume: valori.chirNume, chirCnp: valori.chirCnp, chirCi: valori.chirCi, chirAdresa: valori.chirAdresa,
       imobAdresa: valori.imobAdresa, imobTip: valori.imobTip, imobSuprafata: valori.imobSuprafata, imobCamere: valori.imobCamere,
       dataStart: valori.dataStart, dataSfarsit: valori.dataSfarsit, chirieLunara: valori.chirieLunara, ziuaScadenta: valori.ziuaScadenta, garantie: valori.garantie,
-      utilitati: valori.utilitati, preaviz: valori.preaviz, inventar: valori.inventar,
+      zileRestituireGarantie: valori.zileRestituireGarantie,
+      utilitati: valori.utilitati, preaviz: valori.preaviz,
+      citireElectricitate: valori.citireElectricitate,
+      citireGazNaturale: valori.citireGazNaturale,
+      citireApaRece: valori.citireApaRece,
+      citireApaCalda: valori.citireApaCalda,
+      numarChei: valori.numarChei,
+      starePereti: valori.starePereti,
+      starePardoseala: valori.starePardoseala,
+      mobilier: valori.mobilier,
+      electrocasnice: valori.electrocasnice,
+      observatii: valori.observatii,
       oras: valori.oras, dataDocument: valori.dataDocument,
       semnPropDataUrl: semnProp,
       semnChirDataUrl: semnChir,
@@ -106,9 +133,14 @@ export default function Client() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="space-y-6">
         <section className="bg-white border border-slate-200 rounded-lg p-5">
-          <h2 className="text-lg font-semibold text-slate-900 mb-4">
+          <h2 className="text-lg font-semibold text-slate-900 mb-2">
             Completează datele contractului
           </h2>
+          <p className="text-sm text-slate-600 mb-4">
+            Câmpurile marcate cu „Anexă —" apar în Pagina 2 a PDF-ului
+            (proces-verbal de predare-primire). Le poți lăsa goale dacă vrei să
+            le completezi de mână mai târziu.
+          </p>
           <FormularCerere campuri={campuri} valoriInitiale={initiale} onChange={setValori} />
         </section>
 
@@ -131,7 +163,7 @@ export default function Client() {
           fileName="contract-inchiriere.pdf"
           className="block w-full text-center bg-blue-700 hover:bg-blue-800 text-white font-medium px-4 py-3 rounded-md transition"
         >
-          {({ loading }) => (loading ? 'Se pregătește PDF...' : 'Descarcă PDF')}
+          {({ loading }) => (loading ? 'Se pregătește PDF...' : 'Descarcă PDF (2 pagini: contract + anexă)')}
         </PDFDownloadLink>
       </div>
 
