@@ -41,9 +41,11 @@ export default function PaginaDespre() {
           <li className="flex gap-2">
             <span className="text-blue-700 font-bold">✓</span>
             <span>
-              <strong>Zero cookies de tracking, zero analytics personale.</strong>{' '}
-              Nu te urmărim. Nu știm cine ești. Nu avem cont, nu îți cerem
-              email.
+              <strong>Zero cookies de tracking, zero profil personal.</strong>{' '}
+              Folosim doar statistici anonime agregate (câți vizitatori avem
+              într-o zi, ce pagini sunt cele mai vizitate) — niciodată
+              identificat pe persoană, niciodată conectat cu CNP-ul sau alte
+              date din formular. Nu avem cont, nu îți cerem email.
             </span>
           </li>
           <li className="flex gap-2">
