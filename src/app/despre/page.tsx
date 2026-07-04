@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Despre — Cereri Online',
   description:
     'Cereri Online este un generator gratuit de cereri și acte oficiale în format PDF. Datele tale rămân doar în browser-ul tău, nu sunt salvate nicăieri.',
+  alternates: { canonical: '/despre' },
 }
 
 export default function PaginaDespre() {

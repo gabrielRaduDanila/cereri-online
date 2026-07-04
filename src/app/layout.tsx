@@ -5,9 +5,17 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://model-cerere.ro'),
   title: 'Cereri Online — Generator gratuit de cereri și acte oficiale',
   description:
     'Generează gratuit cereri oficiale completate, actualizate și pregătite pentru tipărire: demisie, concediu, adeverințe, reziliere contracte și altele.',
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({

@@ -7,6 +7,7 @@ const meta = getCerere('adeverinta-angajator')!
 export const metadata: Metadata = {
   title: `${meta.titlu} — model PDF gratuit | Cereri Online`,
   description: meta.descriereSEO,
+  alternates: { canonical: `/cereri/${meta.slug}` },
 }
 
 export default function Pagina() {
