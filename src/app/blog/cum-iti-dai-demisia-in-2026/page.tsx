@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getArticol } from '@/lib/articole'
 
-const meta = getArticol('cum-dai-demisie-in-2026')!
+const meta = getArticol('cum-iti-dai-demisia-in-2026')!
 
 export const metadata: Metadata = {
   title: `${meta.titlu} | Cereri Online`,
