@@ -9,8 +9,7 @@ export default function Home() {
           Cereri Online
         </h1>
         <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-          Completează un formular și descarcă instant cererea ta oficială, în
-          format PDF curat și pregătit pentru tipărire. Gratuit.
+          Completează un formular și descarcă instant cererea, în format PDF.
         </p>
       </section>
 
