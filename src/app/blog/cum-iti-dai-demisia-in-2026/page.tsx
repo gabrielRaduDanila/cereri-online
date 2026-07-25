@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getArticol } from '@/lib/articole'
+import { buildArticleJsonLd } from '@/lib/structured-data'
 
 const meta = getArticol('cum-iti-dai-demisia-in-2026')!
 
@@ -58,66 +59,7 @@ const intrebariFrecvente = [
 ]
 
 export default function ArticolDemisie() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Article',
-        '@id': `https://model-cerere.ro/blog/${meta.slug}#article`,
-        headline: meta.titlu,
-        description: meta.descriere,
-        datePublished: meta.dataPublicare,
-        dateModified: meta.dataPublicare,
-        author: {
-          '@type': 'Organization',
-          name: 'Cereri Online',
-          url: 'https://model-cerere.ro',
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: 'Cereri Online',
-          url: 'https://model-cerere.ro',
-        },
-        mainEntityOfPage: `https://model-cerere.ro/blog/${meta.slug}`,
-        inLanguage: 'ro-RO',
-      },
-      {
-        '@type': 'FAQPage',
-        '@id': `https://model-cerere.ro/blog/${meta.slug}#faq`,
-        mainEntity: intrebariFrecvente.map((q) => ({
-          '@type': 'Question',
-          name: q.intrebare,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: q.raspuns,
-          },
-        })),
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Acasă',
-            item: 'https://model-cerere.ro',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: 'https://model-cerere.ro/blog',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: meta.titlu,
-            item: `https://model-cerere.ro/blog/${meta.slug}`,
-          },
-        ],
-      },
-    ],
-  }
+  const jsonLd = buildArticleJsonLd(meta, intrebariFrecvente, 'Demisia în 2026')
 
   return (
     <div className="max-w-3xl mx-auto">

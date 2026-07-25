@@ -17,6 +17,35 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '8 minute',
     cerereLegata: 'demisie',
   },
+  {
+    slug: 'cum-reziliezi-contractul-de-telefonie-mobila',
+    titlu:
+      'Cum reziliezi contractul cu o companie de telefonie mobilă — ghid 2026',
+    descriere:
+      'Ghid complet pentru rezilierea contractului de telefonie mobilă: când poți pleca fără penalizări, cât costă rezilierea anticipată, cum îți portezi numărul și ce se întâmplă cu telefonul primit la abonament.',
+    dataPublicare: '2026-07-23',
+    timpCitire: '7 minute',
+    cerereLegata: 'reziliere-telefonie',
+  },
+  {
+    slug: 'contract-inchiriere-apartament-ce-trebuie-sa-contina',
+    titlu: 'Contract de închiriere apartament: ce trebuie să conțină (2026)',
+    descriere:
+      'Ghid complet pentru contractul de închiriere valid în România: elemente obligatorii, chirie, garanție, utilități, drepturile ambelor părți, înregistrarea la ANAF și proces-verbal de predare-primire.',
+    dataPublicare: '2026-07-23',
+    timpCitire: '9 minute',
+    cerereLegata: 'contract-inchiriere',
+  },
+  {
+    slug: 'cerere-concediu-fara-plata-model-si-drepturi',
+    titlu:
+      'Cerere de concediu fără plată: model, motive acceptate și drepturile tale',
+    descriere:
+      'Ghid pentru concediul fără plată în România: când poți cere, ce se întâmplă cu vechimea și asigurările, cât poate refuza angajatorul și cum arată o cerere corectă. Include model PDF.',
+    dataPublicare: '2026-07-23',
+    timpCitire: '6 minute',
+    cerereLegata: 'concediu',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
