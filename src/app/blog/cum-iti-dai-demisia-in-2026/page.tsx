@@ -32,7 +32,7 @@ const intrebariFrecvente = [
   {
     intrebare: 'Trebuie să-i spun motivul demisiei?',
     raspuns:
-      'Nu. Codul Muncii nu obligă salariatul să menționeze motivul. Poți lăsa gol acest câmp în cerere. Singura excepție este demisia fără preaviz — în acest caz trebuie să invoci o cauză (nerespectarea obligațiilor de către angajator, cum ar fi salariul neplătit).',
+      'Nu. Codul Muncii nu obligă salariatul să menționeze motivul. Poți lăsa gol acest câmp în cerere. Singura excepție este demisia fără preaviz — în acest caz trebuie să invoci o cauză (de exemplu, nerespectarea obligațiilor de către angajator, cum ar fi salariul neplătit).',
   },
   {
     intrebare: 'Pot să anulez demisia după ce am depus-o?',
