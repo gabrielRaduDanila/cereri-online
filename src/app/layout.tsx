@@ -38,6 +38,9 @@ export default function RootLayout({
               <Link href="/" className="hover:text-blue-700">
                 Cereri
               </Link>
+              <Link href="/blog" className="hover:text-blue-700">
+                Blog
+              </Link>
               <Link href="/despre" className="hover:text-blue-700">
                 Despre
               </Link>
