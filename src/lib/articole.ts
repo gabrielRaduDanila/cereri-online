@@ -46,6 +46,15 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '6 minute',
     cerereLegata: 'concediu',
   },
+  {
+    slug: 'adeverinta-de-la-angajator-tipuri-si-obligatii',
+    titlu: 'Adeverință de la angajator: tipuri, când o ceri și obligațiile firmei',
+    descriere:
+      'Cum ceri o adeverință de la angajator (salariat, venit, vechime), ce trebuie să conțină și în cât timp e obligat să ți-o dea. Cu model PDF.',
+    dataPublicare: '2026-08-15',
+    timpCitire: '4 minute',
+    cerereLegata: 'adeverinta-angajator',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
