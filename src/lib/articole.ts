@@ -14,7 +14,7 @@ export const ARTICOLE: ArticolMeta[] = [
     descriere:
       'Ghid pas cu pas pentru demisie în România: termenul de preaviz, drepturile tale, ce documente primești și cum eviți greșelile frecvente. Include model PDF gratuit.',
     dataPublicare: '2026-07-23',
-    timpCitire: '8 minute',
+    timpCitire: '7 minute',
     cerereLegata: 'demisie',
   },
   {
@@ -24,7 +24,7 @@ export const ARTICOLE: ArticolMeta[] = [
     descriere:
       'Ghid complet pentru rezilierea contractului de telefonie mobilă: când poți pleca fără penalizări, cât costă rezilierea anticipată, cum îți portezi numărul și ce se întâmplă cu telefonul primit la abonament.',
     dataPublicare: '2026-07-23',
-    timpCitire: '7 minute',
+    timpCitire: '5 minute',
     cerereLegata: 'reziliere-telefonie',
   },
   {
@@ -33,7 +33,7 @@ export const ARTICOLE: ArticolMeta[] = [
     descriere:
       'Ghid complet pentru contractul de închiriere valid în România: elemente obligatorii, chirie, garanție, utilități, drepturile ambelor părți, înregistrarea la ANAF și proces-verbal de predare-primire.',
     dataPublicare: '2026-07-23',
-    timpCitire: '9 minute',
+    timpCitire: '7 minute',
     cerereLegata: 'contract-inchiriere',
   },
   {
@@ -43,7 +43,7 @@ export const ARTICOLE: ArticolMeta[] = [
     descriere:
       'Ghid pentru concediul fără plată în România: când poți cere, ce se întâmplă cu vechimea și asigurările, cât poate refuza angajatorul și cum arată o cerere corectă. Include model PDF.',
     dataPublicare: '2026-07-23',
-    timpCitire: '6 minute',
+    timpCitire: '5 minute',
     cerereLegata: 'concediu',
   },
   {

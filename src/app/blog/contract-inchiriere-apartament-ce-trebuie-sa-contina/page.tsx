@@ -325,63 +325,31 @@ export default function ArticolContractInchiriere() {
         </ul>
 
         <h2 className="text-2xl font-bold text-slate-900 pt-4">
-          Autentificarea la notar — costuri și beneficii
+          Autentificarea la notar — utilă, nu obligatorie
         </h2>
         <p className="text-slate-700 leading-relaxed">
-          Nu e obligatorie prin lege, dar recomandată pentru contracte
-          importante. Avantaje:
-        </p>
-        <ul className="list-disc pl-6 space-y-2 text-slate-700">
-          <li>
-            <strong>Titlu executoriu direct.</strong> Pentru neplata chiriei
-            sau nepredarea imobilului la termen, mergi direct la executor
-            judecătoresc — fără proces în instanță
-          </li>
-          <li>
-            <strong>Validare identitate părți.</strong> Notarul verifică actele,
-            capacitatea de contractare
-          </li>
-          <li>
-            <strong>Cost:</strong> ~200-500 lei (împărțit între părți dacă
-            convin), în funcție de valoarea contractului
-          </li>
-        </ul>
-        <p className="text-slate-700 leading-relaxed">
-          Pentru chirii sub 2000 lei/lună și relații de încredere, contract sub
-          semnătură privată e suficient. Pentru chirii mari sau chiriași noi,
-          notariatul se plătește singur.
+          Contractul sub semnătură privată e valid și fără notar. Avantajul
+          notariatului e titlul executoriu direct: pentru neplată sau
+          nepredare la termen, mergi la executor judecătoresc fără proces
+          (durează 2-4 luni vs 6-12 în instanță). Cost: 200-500 lei, împărțit
+          între părți dacă convin. Merită pentru chirii mari sau chiriași
+          necunoscuți.
         </p>
 
         <h2 className="text-2xl font-bold text-slate-900 pt-4">
-          Greșeli frecvente pe care să le eviți
+          Greșeli frecvente
         </h2>
-        <ol className="list-decimal pl-6 space-y-3 text-slate-700">
-          <li>
-            <strong>Contract verbal sau „pe hârtie de carnet".</strong> Fără
-            document scris cu toate clauzele, ești fără protecție legală. La
-            primul conflict, pierzi.
-          </li>
-          <li>
-            <strong>Fără proces-verbal de predare-primire.</strong> Chiriașul
-            va spune că defectele existau înainte de mutare. Proprietarul va
-            reține garanția pentru „daune". Nu poți dovedi nimic.
-          </li>
-          <li>
-            <strong>Neplata impozitelor de proprietar.</strong> Chiar dacă
-            chiriașul e ok, ANAF verifică. Amendă + recalculare + dobânzi = de
-            multe ori mai mult decât ai câștigat.
-          </li>
-          <li>
-            <strong>Garanție folosită pe parcurs pentru „reparații".</strong>{' '}
-            La finalul contractului, chiriașul cere garanția înapoi și
-            proprietarul nu mai are bani. Ține garanția separat, în cont
-            bancar.
-          </li>
-          <li>
-            <strong>Fără clauză de indexare pe chirii pe termen lung.</strong>{' '}
-            Inflația poate reduce valoarea reală a chiriei cu 10-20% în 2 ani.
-          </li>
-        </ol>
+        <p className="text-slate-700 leading-relaxed">
+          Trei greșeli produc majoritatea disputelor: <strong>fără
+          proces-verbal de predare-primire</strong> (chiriașul spune că
+          defectele erau deja acolo, proprietarul reține garanția, nimeni nu
+          poate dovedi nimic), <strong>neplata impozitului de către
+          proprietar</strong> (ANAF verifică sistematic anunțurile — amendă +
+          recalculare + dobânzi de multe ori depășesc câștigul), și{' '}
+          <strong>folosirea garanției pe parcurs pentru „reparații"</strong>{' '}
+          (la finalul contractului, chiriașul cere garanția înapoi și
+          proprietarul nu mai are bani — ține-o separat în cont bancar).
+        </p>
 
         <h2 className="text-2xl font-bold text-slate-900 pt-4">
           Întrebări frecvente

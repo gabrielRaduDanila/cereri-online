@@ -311,29 +311,18 @@ export default function ArticolDemisie() {
         </p>
 
         <h2 className="text-2xl font-bold text-slate-900 pt-4">
-          Greșeli frecvente pe care să le eviți
+          Ce să eviți
         </h2>
-        <ol className="list-decimal pl-6 space-y-3 text-slate-700">
-          <li>
-            <strong>Demisie verbală.</strong> Nu produce efecte legale. Dacă
-            angajatorul refuză să-ți dea salariul apoi, nu ai cu ce dovedi.
-          </li>
-          <li>
-            <strong>Cerere fără număr de înregistrare.</strong> Fără dovada
-            primirii, preavizul nu începe să curgă.
-          </li>
-          <li>
-            <strong>Plecare înainte de expirarea preavizului</strong> (fără
-            acordul angajatorului). Poate fi calificată drept absență
-            nemotivată și dă dreptul angajatorului la concediere disciplinară,
-            care apare în REVISAL.
-          </li>
-          <li>
-            <strong>Semnare de acte în ultima zi fără să citești.</strong> Unele
-            angajatori încearcă să te facă să semnezi „acord de confidențialitate
-            extinsă" sau „renunțare la drepturi" — ai voie să refuzi.
-          </li>
-        </ol>
+        <p className="text-slate-700 leading-relaxed">
+          Cele mai frecvente probleme apar când sari peste formalități:
+          demisie verbală (fără efect legal), cerere fără număr de
+          înregistrare (preavizul nu începe să curgă), plecare înainte de
+          expirarea preavizului fără acord (calificată drept absență
+          nemotivată, cu risc de concediere disciplinară). În ultima zi, dacă
+          angajatorul îți pune la semnat „acord de confidențialitate extinsă"
+          sau „renunțare la drepturi", citește cu atenție — ai voie să
+          refuzi.
+        </p>
 
         <h2 className="text-2xl font-bold text-slate-900 pt-4">
           Întrebări frecvente
