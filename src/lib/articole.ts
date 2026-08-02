@@ -55,6 +55,15 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '4 minute',
     cerereLegata: 'adeverinta-angajator',
   },
+  {
+    slug: 'adeverinta-de-la-primarie-tipuri-si-cum-le-obtii',
+    titlu: 'Adeverințe de la primărie: ce tipuri există și cum le obții',
+    descriere:
+      'Ghid despre adeverințele emise de primărie: domiciliu, componență familie, rol fiscal, fiscală. Pentru ce le folosești, cât costă, cât durează și cum le ceri online sau la ghișeu.',
+    dataPublicare: '2026-08-22',
+    timpCitire: '6 minute',
+    cerereLegata: 'adeverinta-primarie',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
