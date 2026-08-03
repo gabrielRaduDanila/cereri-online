@@ -64,6 +64,15 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '6 minute',
     cerereLegata: 'adeverinta-primarie',
   },
+  {
+    slug: 'loc-de-parcare-de-resedinta-cum-obtii',
+    titlu: 'Loc de parcare de reședință: cum obții unul de la primărie',
+    descriere:
+      'Ghid despre locul de parcare de reședință: cine are dreptul, cât costă în funcție de oraș, ce documente îți trebuie, cum depui cererea și ce faci dacă ești refuzat.',
+    dataPublicare: '2026-08-30',
+    timpCitire: '5 minute',
+    cerereLegata: 'loc-parcare',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
