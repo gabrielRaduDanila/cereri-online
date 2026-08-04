@@ -73,6 +73,15 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '5 minute',
     cerereLegata: 'loc-parcare',
   },
+  {
+    slug: 'cerere-catre-primarie-cum-o-scrii-corect',
+    titlu: 'Cerere către primărie: cum o scrii corect și ce trebuie să conțină',
+    descriere:
+      'Ghid practic pentru redactarea unei cereri către primărie: structura obligatorie, formulele oficiale, ce să eviți, cum o depui și în cât timp primești răspuns.',
+    dataPublicare: '2026-09-05',
+    timpCitire: '6 minute',
+    cerereLegata: 'cerere-primarie',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
