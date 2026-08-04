@@ -91,6 +91,18 @@ export const CERERI: CerereMeta[] = [
     descriereMetaSEO:
       'Model cerere către primărie 2026: completezi datele, obiectul și motivarea, semnezi cu mouse-ul și descarci PDF-ul. Gratis, fără cont, fără date salvate.',
   },
+  {
+    slug: 'conventie-incetare-inchiriere',
+    titlu: 'Convenție de încetare contract închiriere',
+    descriereScurta:
+      'Acord bilateral între proprietar și chiriaș pentru încetarea amiabilă a contractului.',
+    descriereSEO:
+      'Convenție de încetare a contractului de închiriere, semnată de comun acord de proprietar și chiriaș, cu regularizarea garanției și predarea imobilului.',
+    titluSEO:
+      'Convenție Încetare Contract Închiriere 2026 — Model PDF gratuit',
+    descriereMetaSEO:
+      'Model convenție încetare contract închiriere 2026: acord bilateral, garanție, chei, utilități. PDF gratuit, 2 semnături (proprietar + chiriaș), descărcare instant.',
+  },
 ]
 
 export function getCerere(slug: string): CerereMeta | undefined {

@@ -10,9 +10,9 @@ describe('Homepage', () => {
     ).toBeInTheDocument()
   })
 
-  it('afișează 9 tipuri de documente, fiecare cu link către pagina lui', () => {
+  it('afișează 10 tipuri de documente, fiecare cu link către pagina lui', () => {
     render(<Home />)
-    expect(CERERI).toHaveLength(9)
+    expect(CERERI).toHaveLength(10)
     for (const c of CERERI) {
       const link = screen
         .getAllByRole('link')

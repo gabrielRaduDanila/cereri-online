@@ -92,6 +92,16 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '5 minute',
     cerereLegata: 'reziliere-chirie',
   },
+  {
+    slug: 'conventie-de-incetare-contract-inchiriere-model',
+    titlu:
+      'Convenție de încetare a contractului de închiriere — model și diferențe față de reziliere',
+    descriere:
+      'Când folosești convenția de încetare în loc de reziliere, ce trebuie să conțină, cum se semnează de ambele părți și cum eviți litigii ulterioare. Include model PDF gratuit.',
+    dataPublicare: '2026-09-22',
+    timpCitire: '5 minute',
+    cerereLegata: 'conventie-incetare-inchiriere',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
