@@ -82,6 +82,16 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '6 minute',
     cerereLegata: 'cerere-primarie',
   },
+  {
+    slug: 'reziliere-contract-de-chirie-preaviz-si-garantie',
+    titlu:
+      'Reziliere contract de chirie: preaviz, garanție și cum eviți conflictele',
+    descriere:
+      'Ghid pentru rezilierea contractului de închiriere: cine poate rezilia și când, cum se calculează preavizul, ce se întâmplă cu garanția și cum eviți litigiile la ieșirea din chirie.',
+    dataPublicare: '2026-09-14',
+    timpCitire: '5 minute',
+    cerereLegata: 'reziliere-chirie',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
