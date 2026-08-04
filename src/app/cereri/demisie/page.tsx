@@ -5,8 +5,8 @@ import DemisieClient from './DemisieClient'
 const meta = getCerere('demisie')!
 
 export const metadata: Metadata = {
-  title: `${meta.titlu} — model PDF gratuit | Cereri Online`,
-  description: meta.descriereSEO,
+  title: meta.titluSEO ?? `${meta.titlu} — model PDF gratuit | Cereri Online`,
+  description: meta.descriereMetaSEO ?? meta.descriereSEO,
   alternates: { canonical: `/cereri/${meta.slug}` },
 }
 

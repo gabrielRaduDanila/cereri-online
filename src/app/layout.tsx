@@ -6,9 +6,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://model-cerere.ro'),
-  title: 'Cereri Online — Generator gratuit de cereri și acte oficiale',
+  title: 'Cereri Online 2026 — Model PDF gratuit, semnat, descărcabil în 2 min',
   description:
-    'Generează gratuit cereri oficiale completate, actualizate și pregătite pentru tipărire: demisie, concediu, adeverințe, reziliere contracte și altele.',
+    'Model cerere PDF gratuit: demisie, concediu, adeverințe, contract închiriere, reziliere. Completezi, semnezi cu mouse-ul, descarci. Fără cont, fără date salvate.',
   alternates: {
     canonical: '/',
   },

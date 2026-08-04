@@ -3,6 +3,8 @@ export type CerereMeta = {
   titlu: string
   descriereScurta: string
   descriereSEO: string
+  titluSEO?: string
+  descriereMetaSEO?: string
 }
 
 export const CERERI: CerereMeta[] = [
@@ -13,6 +15,9 @@ export const CERERI: CerereMeta[] = [
       'Model oficial de demisie cu preaviz, conform Codului Muncii.',
     descriereSEO:
       'Generează gratuit o cerere de demisie corectă, completată cu datele tale și descărcabilă instant ca PDF.',
+    titluSEO: 'Cerere Demisie 2026 — Model PDF gratuit, preaviz 20 zile',
+    descriereMetaSEO:
+      'Model cerere demisie 2026 conform Codului Muncii: preaviz 20 zile, complet, semnat cu mouse-ul, PDF instant. Fără cont, fără date salvate.',
   },
   {
     slug: 'contract-inchiriere',
@@ -21,6 +26,10 @@ export const CERERI: CerereMeta[] = [
       'Contract complet între proprietar și chiriaș, cu chirie, garanție și anexă proces-verbal.',
     descriereSEO:
       'Generează un contract de închiriere complet între proprietar și chiriaș, cu datele imobilului, perioada, chiria, garanția și anexa de proces-verbal de predare-primire.',
+    titluSEO:
+      'Contract Închiriere Apartament 2026 — Model PDF gratuit + Anexă',
+    descriereMetaSEO:
+      'Contract închiriere apartament 2026: chirie, garanție, anexă proces-verbal predare-primire. PDF gratuit, semnat de ambele părți, descărcare instant.',
   },
   {
     slug: 'reziliere-telefonie',
@@ -77,6 +86,10 @@ export const CERERI: CerereMeta[] = [
       'Model general de cerere către primărie, adaptabil pentru orice solicitare.',
     descriereSEO:
       'Model general de cerere către primărie, completabil pentru orice tip de solicitare.',
+    titluSEO:
+      'Cerere către Primărie 2026 — Model PDF gratuit, descarci în 2 min',
+    descriereMetaSEO:
+      'Model cerere către primărie 2026: completezi datele, obiectul și motivarea, semnezi cu mouse-ul și descarci PDF-ul. Gratis, fără cont, fără date salvate.',
   },
 ]
 
