@@ -102,6 +102,16 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '5 minute',
     cerereLegata: 'conventie-incetare-inchiriere',
   },
+  {
+    slug: 'model-cerere-solicitare-orice-institutie',
+    titlu:
+      'Model cerere de solicitare — cum scrii o cerere valabilă pentru orice instituție',
+    descriere:
+      'Ghid practic pentru o cerere universală (primărie, minister, agenție, firmă): structura obligatorie, cum formulezi obiectul, ce anexi și cum o depui ca să primești răspuns.',
+    dataPublicare: '2026-09-28',
+    timpCitire: '5 minute',
+    cerereLegata: 'cerere-generala',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
