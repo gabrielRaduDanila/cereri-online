@@ -103,6 +103,18 @@ export const CERERI: CerereMeta[] = [
     descriereMetaSEO:
       'Model convenție încetare contract închiriere 2026: acord bilateral, garanție, chei, utilități. PDF gratuit, 2 semnături (proprietar + chiriaș), descărcare instant.',
   },
+  {
+    slug: 'cerere-generala',
+    titlu: 'Cerere generală de solicitare',
+    descriereScurta:
+      'Model universal de cerere către orice instituție publică sau privată.',
+    descriereSEO:
+      'Model general de cerere de solicitare, adaptabil pentru orice instituție publică sau privată (primărie, minister, agenție, firmă).',
+    titluSEO:
+      'Model Cerere de Solicitare 2026 — Universal, PDF gratuit, orice instituție',
+    descriereMetaSEO:
+      'Model cerere de solicitare 2026, universal: pentru orice instituție (primărie, minister, agenție, firmă). Completezi obiectul, semnezi, descarci PDF. Gratis, fără cont.',
+  },
 ]
 
 export function getCerere(slug: string): CerereMeta | undefined {
