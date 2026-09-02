@@ -13,10 +13,15 @@ import type { Metadata } from 'next'
 // Textul e ținut la zi în aplicație, la `aplicatie_unity/app/docs/confidentialitate.md`. Când
 // se schimbă acolo, se schimbă și aici — sunt două copii ale aceluiași lucru, iar cea care
 // contează legal e asta, fiindcă asta o citește lumea.
+//
+// ⚠ 2 septembrie 2026: pagina spunea două lucruri NEADEVĂRATE și au fost scoase. Zicea
+// „cumpărare unică" (aplicația are abonament) și descria un clasament găzduit pe Google
+// Firebase, care NU există în aplicație — deci scria că pleacă date de pe telefon, când nu
+// pleacă nimic. Amândouă sunt lucruri pe care Google le verifică față de ce face pachetul.
 export const metadata: Metadata = {
   title: 'Politica de confidențialitate — Junglio',
   description:
-    'Cum tratează aplicația Junglio datele copiilor: fără cont, fără reclame, fără urmăritori. Aproape tot rămâne pe telefon.',
+    'Cum tratează aplicația Junglio datele copiilor: fără cont, fără reclame, fără urmăritori. Tot ce știe despre copil rămâne pe telefon.',
   alternates: { canonical: '/junglio-confidentialitate' },
   robots: { index: false, follow: false },
 }
@@ -37,17 +42,18 @@ export default function PoliticaJunglio() {
         <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
           Politica de confidențialitate — Junglio
         </h1>
-        <p className="mt-2 text-sm text-slate-500">Ultima actualizare: 16 august 2026</p>
+        <p className="mt-2 text-sm text-slate-500">Ultima actualizare: 2 septembrie 2026</p>
         <p className="mt-4 text-lg text-slate-600">
           Junglio este o aplicație educativă pentru copii de 4-10 ani, cu jocuri făcute după
-          programa școlară din România.
+          programa școlară din România. Politica asta spune, pe scurt și fără ocolișuri, ce se
+          întâmplă cu datele în aplicație.
         </p>
       </header>
 
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
         <p className="text-slate-800">
           <strong>Pe scurt:</strong> aplicația nu cere cont, nu cere email, nu are reclame și nu
-          are urmăritori. Aproape tot ce știe despre copil rămâne pe telefon.
+          are urmăritori. Tot ce știe despre copil rămâne pe telefon.
         </p>
       </div>
 
@@ -80,33 +86,25 @@ export default function PoliticaJunglio() {
         </p>
       </Sectiune>
 
-      <Sectiune titlu="3. Ce se trimite, pentru clasament">
+      <Sectiune titlu="3. Ce se trimite în afara telefonului">
         <p>
-          Aplicația are un clasament săptămânal, în care copilul se vede alături de alți copii
-          din aceeași ligă. Pentru el se trimit <strong>doar</strong>:
-        </p>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>
-            un <strong>identificator anonim</strong>, făcut la întâmplare la prima pornire (nu e
-            legat de telefon, de contul Google sau de vreo persoană);
-          </li>
-          <li>
-            un <strong>nume de junglă</strong> ales de aplicație dintr-o listă închisă („Tigrul
-            Curajos", „Bufnița Isteață") — copilul nu poate scrie text liber;
-          </li>
-          <li>avatarul ales din listă;</li>
-          <li>numărul de puncte din săptămâna curentă.</li>
-        </ul>
-        <p>
-          <strong>Numele adevărat al copilului nu se trimite niciodată.</strong> Nici clasa, nici
-          vârsta, nici progresul. Datele astea sunt găzduite de Google Firebase (Firestore).
+          <strong>Nimic.</strong> Aplicația nu trimite nicăieri date despre copil: nici numele,
+          nici clasa, nici vârsta, nici progresul, nici vreun identificator. Nu are server
+          propriu și nu folosește un serviciu care să strângă date despre cine joacă.
         </p>
       </Sectiune>
 
       <Sectiune titlu="4. Microfonul">
         <p>
           <strong>Aplicația nu cere permisiune de microfon și nu poate înregistra sunet.</strong>{' '}
-          La exercițiile de citire, copilul citește cu voce tare și apasă singur „Am citit".
+          La exercițiile de citire, copilul citește cu voce tare și apasă singur „Am citit”.
+        </p>
+        <p>
+          Am avut o variantă care asculta cum citește copilul, ca să-l corecteze. Am scos-o:
+          singurul fel în care ar fi mers fără ca vocea copilului să plece de pe telefon cerea un
+          model de limbă românesc descărcat local, iar acela lipsește de pe aproape toate
+          telefoanele. Am preferat să lipsească funcția decât să cerem o permisiune de microfon
+          pe care aproape nimic n-o folosește.
         </p>
       </Sectiune>
 
@@ -126,14 +124,20 @@ export default function PoliticaJunglio() {
 
       <Sectiune titlu="6. Cumpărături în aplicație">
         <p>
-          Aplicația e gratuită. O parte din conținut se poate debloca printr-o cumpărare unică,
-          făcută prin Google Play. <strong>Plata o gestionează integral Google</strong> — noi nu
-          vedem și nu păstrăm numărul cardului sau vreun alt detaliu de plată. Cumpărarea e
-          legată de contul Google al cumpărătorului, deci se restaurează singură pe alt telefon.
+          Aplicația se poate folosi gratuit, cu o limită zilnică: <strong>5 jocuri pe zi</strong>.
+          Limita se reînnoiește în fiecare zi.
+        </p>
+        <p>
+          Jocul fără limită se obține printr-un <strong>abonament</strong> (lunar, pe trei luni
+          sau anual), cumpărat prin Google Play. <strong>Plata o gestionează integral Google</strong>{' '}
+          — noi nu vedem și nu păstrăm numărul cardului sau vreun alt detaliu de plată.
+          Abonamentul e legat de contul Google al cumpărătorului, deci se restaurează singur pe
+          alt telefon și se poate anula oricând din Google Play, de la „Abonamente”.
         </p>
         <p>
           Cumpărarea se face în spatele unei porți pentru părinți (o întrebare la care un copil
-          mic nu poate răspunde), ca să nu poată fi făcută de copil singur.
+          mic nu poate răspunde), ca să nu poată fi făcută de copil singur. Aplicația nu îi cere
+          copilului să cumpere și nici să roage pe altcineva să cumpere.
         </p>
       </Sectiune>
 
@@ -144,19 +148,20 @@ export default function PoliticaJunglio() {
           telefon sau vreun identificator care să ducă la o persoană.
         </p>
         <p>
-          Dacă ești părinte și vrei ca datele legate de dispozitivul copilului să fie șterse din
-          clasament, scrie la{' '}
+          Dacă ești părinte și vrei să ștergi tot ce a strâns aplicația despre copil, e de ajuns
+          să dezinstalezi aplicația sau să ștergi datele ei din setările telefonului: totul stă
+          acolo, la tine. Pentru orice întrebare, scrie la{' '}
           <a className="text-blue-700 underline" href="mailto:junglio.app@gmail.com">
             junglio.app@gmail.com
-          </a>{' '}
-          cu numele de junglă afișat în aplicație și le ștergem.
+          </a>
+          .
         </p>
       </Sectiune>
 
       <Sectiune titlu="8. Cât ținem datele">
         <ul className="list-disc pl-6 space-y-1">
           <li>Datele de pe telefon: până la dezinstalare, ori până la ștergerea datelor aplicației.</li>
-          <li>Rândul din clasament: până la 12 luni de la ultima jucare, apoi se șterge.</li>
+          <li>În afara telefonului nu ținem nimic, fiindcă nu primim nimic.</li>
         </ul>
       </Sectiune>
 
