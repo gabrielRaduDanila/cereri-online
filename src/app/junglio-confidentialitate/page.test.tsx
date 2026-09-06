@@ -56,4 +56,24 @@ describe('politica de confidențialitate Junglio (pagina publicată)', () => {
   it('rămâne ascunsă din căutări, dar deschisă oricui are linkul', () => {
     expect(cod).toMatch(/robots:\s*\{\s*index:\s*false/)
   })
+
+  // ⚠ PAGINA NU ARE VOIE SĂ ANUNȚE O ÎNTRECERE ÎNTRE TRIBURI CÂT TIMP TRIBURILE SUNT INVENTATE.
+  //
+  // Userul, 6 septembrie 2026: „triburile să fie și ele adevărate", și apoi, despre înlocuirea
+  // punctelor simulate cu suma adevărată: „să nu uiți asta. Să o faci neapărat."
+  //
+  // Ca să nu depindă de ținerea mea de minte, stă aici: în clipa în care cineva copiază ciorna
+  // (page.viitor.tsx) peste pagina publicată, testul ăsta se uită în aplicație și cade dacă
+  // clasamentul echipelor mai vine din `simulatedTeamXp`. Adică pagina nu se poate publica
+  // înainte ca triburile să fie chiar adevărate.
+  it('dacă anunță întrecerea dintre triburi, triburile nu mai au voie să fie simulate', () => {
+    if (!/între triburi/i.test(cod)) return // pagina de azi nu anunță nimic de felul ăsta
+    const caleApp = path.join(__dirname, '..', '..', '..', '..', '..', 'aplicatie_unity', 'app', 'src', 'screens', 'ChampionshipScreen.js')
+    if (!fs.existsSync(caleApp)) {
+      throw new Error('pagina anunță întrecerea dintre triburi, dar aplicația nu e pe disc ca să pot verifica')
+    }
+    const ecran = fs.readFileSync(caleApp, 'utf8')
+    expect({ ecran: 'ChampionshipScreen.js', foloseste_puncte_simulate: /standingsAcum|simulatedTeamXp/.test(ecran) })
+      .toEqual({ ecran: 'ChampionshipScreen.js', foloseste_puncte_simulate: false })
+  })
 })
