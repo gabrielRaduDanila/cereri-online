@@ -173,7 +173,51 @@ export default function PoliticaJunglio() {
         </p>
       </Sectiune>
 
-      <Sectiune titlu="4. Microfonul">
+      {/* ⚠ SECȚIUNE CERUTĂ DE GOOGLE, nu doar bine de avut. La „Delete data URL" din Data safety
+          scrie limpede ce trebuie să conțină pagina de la capătul linkului:
+            • să numească aplicația sau dezvoltatorul;
+            • să arate LA VEDERE pașii pe care îi face omul ca să ceară ștergerea;
+            • să spună ce date se șterg, ce rămâne, și dacă mai există vreo perioadă de păstrare.
+          Politica pomenea ștergerea într-o singură propoziție — adică prima condiție era
+          îndeplinită, celelalte două nu. Scris pe 8 septembrie 2026. */}
+      <Sectiune titlu="4. Cum ștergi datele copilului">
+        <p className="font-semibold">Din aplicație, în două atingeri:</p>
+        <ol className="list-decimal pl-6 space-y-1">
+          <li>
+            Pe hartă, apeși <strong>„Pentru părinți"</strong>.
+          </li>
+          <li>
+            Apeși <strong>„Scoate copilul din clasament"</strong>.
+          </li>
+        </ol>
+        <p>
+          <strong>Ce se șterge, imediat și definitiv:</strong> rândul copilului de pe server —
+          identificatorul anonim, numele de junglă, avatarul, punctele săptămânii și tribul. Dacă
+          tocmai el era bossul tribului, titlul se eliberează și numele lui dispare de acolo. Din
+          clipa aceea nu se mai trimite nimic.
+        </p>
+        <p>
+          <strong>Ce rămâne:</strong> tot ce era oricum pe telefon — numele scris de tine, clasa,
+          progresul, monedele, jungla construită. Alea n-au plecat niciodată de acolo și nu sunt
+          atinse: copilul joacă mai departe exact ca înainte, doar că nu mai apare în clasament.
+        </p>
+        <p>
+          <strong>Nu ținem nimic după ștergere.</strong> Nu există copie, arhivă sau perioadă de
+          păstrare în plus.
+        </p>
+        <p>
+          <strong>Dacă ai dezinstalat deja aplicația</strong>, butonul nu mai există, iar rândul
+          rămas pe server nu poate fi legat de o persoană — el conține doar un nume de animal și
+          niște puncte. Dacă vrei totuși să-l ștergem, scrie la{' '}
+          <a className="text-blue-700 underline" href="mailto:junglio.app@gmail.com">
+            junglio.app@gmail.com
+          </a>{' '}
+          cu numele de junglă al copilului (cel afișat în clasament), și îl ștergem în cel mult 30
+          de zile.
+        </p>
+      </Sectiune>
+
+      <Sectiune titlu="5. Microfonul">
         <p>
           <strong>Aplicația nu cere permisiune de microfon și nu poate înregistra sunet.</strong>{' '}
           La exercițiile de citire, copilul citește cu voce tare și apasă singur „Am citit”.
@@ -187,7 +231,7 @@ export default function PoliticaJunglio() {
         </p>
       </Sectiune>
 
-      <Sectiune titlu="5. Ce NU face aplicația">
+      <Sectiune titlu="6. Ce NU face aplicația">
         <ul className="list-disc pl-6 space-y-1">
           <li>
             <strong>Nu are reclame.</strong> Deloc.
@@ -207,7 +251,7 @@ export default function PoliticaJunglio() {
         </ul>
       </Sectiune>
 
-      <Sectiune titlu="6. Cumpărături în aplicație">
+      <Sectiune titlu="7. Cumpărături în aplicație">
         <p>
           Aplicația se poate folosi gratuit, cu o limită zilnică: <strong>5 jocuri pe zi</strong>.
           Limita se reînnoiește în fiecare zi.
@@ -227,7 +271,7 @@ export default function PoliticaJunglio() {
         </p>
       </Sectiune>
 
-      <Sectiune titlu="7. Copiii">
+      <Sectiune titlu="8. Copiii">
         <p>
           Aplicația e făcută pentru copii și respectă politica Google Play pentru familii. Nu
           cerem nume real verificat, adresă, email, telefon sau vreun identificator care să ducă
@@ -243,7 +287,7 @@ export default function PoliticaJunglio() {
         </p>
       </Sectiune>
 
-      <Sectiune titlu="8. Cât ținem datele">
+      <Sectiune titlu="9. Cât ținem datele">
         <ul className="list-disc pl-6 space-y-1">
           <li>
             Datele de pe telefon: până la dezinstalare, ori până la ștergerea datelor aplicației.
@@ -255,7 +299,7 @@ export default function PoliticaJunglio() {
         </ul>
       </Sectiune>
 
-      <Sectiune titlu="9. Schimbări">
+      <Sectiune titlu="10. Schimbări">
         <p>
           Dacă politica se schimbă, data de sus se actualizează, iar schimbările importante se
           anunță în aplicație.
