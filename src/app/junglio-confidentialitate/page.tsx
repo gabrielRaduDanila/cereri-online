@@ -181,13 +181,17 @@ export default function PoliticaJunglio() {
           Politica pomenea ștergerea într-o singură propoziție — adică prima condiție era
           îndeplinită, celelalte două nu. Scris pe 8 septembrie 2026. */}
       <Sectiune titlu="4. Cum ștergi datele copilului">
-        <p className="font-semibold">Din aplicație, în două atingeri:</p>
+        <p className="font-semibold">Din aplicație, în trei pași:</p>
         <ol className="list-decimal pl-6 space-y-1">
           <li>
-            Pe hartă, apeși <strong>„Pentru părinți"</strong>.
+            Pe hartă, apeși <strong>„Pentru părinți”</strong>.
           </li>
           <li>
-            Apeși <strong>„Scoate copilul din clasament"</strong>.
+            Se deschide <strong>„Doar pentru părinți”</strong>, cu o înmulțire de rezolvat — e acolo ca
+            să nu ajungă copilul singur în zona ta. O rezolvi și apeși <strong>„Verifică”</strong>.
+          </li>
+          <li>
+            În raport, jos de tot, apeși <strong>„Scoate copilul din clasament”</strong>.
           </li>
         </ol>
         <p>
