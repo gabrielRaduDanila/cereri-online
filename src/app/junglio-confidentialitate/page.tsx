@@ -54,7 +54,7 @@ export default function PoliticaJunglio() {
         </h1>
         <p className="mt-2 text-sm text-slate-500">Ultima actualizare: ZZ septembrie 2026</p>
         <p className="mt-4 text-lg text-slate-600">
-          Junglio este o aplicație educativă pentru copii de 4-10 ani, cu jocuri făcute după
+          Junglio este o aplicație educativă pentru copii de 6-11 ani, cu jocuri făcute după
           programa școlară din România. Politica asta spune, pe scurt și fără ocolișuri, ce se
           întâmplă cu datele în aplicație.
         </p>
@@ -71,7 +71,9 @@ export default function PoliticaJunglio() {
 
       <Sectiune titlu="1. Cine răspunde de aplicație">
         <p>
-          Junglio este realizată de Radu-Gabriel Dănilă. Contact:{' '}
+          Junglio este realizată de <strong>Radu-Gabriel Dănilă și Angela Dănilă</strong>. De
+          datele din aplicație răspunde <strong>Angela Dănilă</strong>, titulara contului de
+          dezvoltator Google Play. Contact:{' '}
           <a className="text-blue-700 underline" href="mailto:junglio.app@gmail.com">
             junglio.app@gmail.com
           </a>
@@ -110,7 +112,7 @@ export default function PoliticaJunglio() {
           Versiunea instalată se vede în Setări → Aplicații → Junglio.
         </p>
         <p>
-          Aplicația are <strong>două întreceri</strong>, și amândouă sunt adevărate — adică arată
+          Aplicația are <strong>trei întreceri</strong>, și toate trei sunt adevărate — adică arată
           copii care chiar joacă, nu jucători inventați de noi:
         </p>
         <ul className="list-disc pl-6 space-y-1">
@@ -121,6 +123,11 @@ export default function PoliticaJunglio() {
           <li>
             <strong>clasamentul între triburi</strong> — punctele tuturor copiilor dintr-un trib se
             adună la un loc, iar cele patru triburi se întrec între ele;
+          </li>
+          <li>
+            <strong>bossul tribului</strong> — copilul care răspunde corect la toate întrebările
+            grele devine boss, iar <strong>numele lui de junglă</strong> și ziua în care a câștigat
+            sunt văzute de tot tribul, până când îl învinge altcineva.
           </li>
         </ul>
         <p>
