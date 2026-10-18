@@ -112,6 +112,26 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '5 minute',
     cerereLegata: 'cerere-generala',
   },
+  {
+    slug: 'anexa-contract-inchiriere-apartament-proces-verbal',
+    titlu:
+      'Anexa la contractul de închiriere apartament: proces-verbal de predare-primire',
+    descriere:
+      'Ce este anexa de proces-verbal la contractul de închiriere, ce trebuie să conțină (contoare, inventar mobilier, chei, starea imobilului) și de ce te protejează la ieșirea din chirie.',
+    dataPublicare: '2026-10-18',
+    timpCitire: '5 minute',
+    cerereLegata: 'contract-inchiriere',
+  },
+  {
+    slug: 'model-cerere-word-sau-pdf-ce-sa-alegi',
+    titlu:
+      'Model de cerere în Word sau PDF: ce format alegi pentru instituții',
+    descriere:
+      'Comparație între Word și PDF pentru cereri oficiale: când e acceptat fiecare, ce format cer instituțiile românești și cum convertești între ele dacă e necesar.',
+    dataPublicare: '2026-10-18',
+    timpCitire: '4 minute',
+    cerereLegata: 'cerere-generala',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {

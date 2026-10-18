@@ -6,10 +6,11 @@ export default function Home() {
     <div>
       <section className="text-center py-10 sm:py-16">
         <h1 className="text-3xl sm:text-5xl font-bold text-slate-900 tracking-tight">
-          Cereri Online
+          Model de cerere — PDF gratuit, în 2 minute
         </h1>
         <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-          Completează un formular și descarcă instant cererea, în format PDF.
+          11 modele de cereri și acte oficiale, completate online. Semnezi cu
+          mouse-ul, descarci instant PDF-ul. Zero cont, zero date salvate.
         </p>
       </section>
 
@@ -40,7 +41,7 @@ export default function Home() {
 
       <section>
         <h2 className="text-xl font-semibold text-slate-900 mb-4">
-          Alege tipul de cerere
+          Alege modelul de cerere
         </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {CERERI.map((c) => (

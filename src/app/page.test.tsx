@@ -3,10 +3,10 @@ import Home from './page'
 import { CERERI } from '@/lib/cereri'
 
 describe('Homepage', () => {
-  it('afișează titlul principal', () => {
+  it('afișează titlul principal cu cuvântul-cheie "model de cerere"', () => {
     render(<Home />)
     expect(
-      screen.getByRole('heading', { name: /cereri online/i, level: 1 })
+      screen.getByRole('heading', { name: /model de cerere/i, level: 1 })
     ).toBeInTheDocument()
   })
 
