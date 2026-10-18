@@ -132,6 +132,16 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '4 minute',
     cerereLegata: 'cerere-generala',
   },
+  {
+    slug: 'cerere-restituire-bani-produs-defect-garantie',
+    titlu:
+      'Cerere restituire bani pentru produs defect: drepturile tale conform legii',
+    descriere:
+      'Când poți cere restituirea banilor, când doar schimbarea sau reparația, cum formulezi cererea către vânzător și ce faci dacă e refuzată. Legea 449/2003 și OUG 140/2021 explicate.',
+    dataPublicare: '2026-10-18',
+    timpCitire: '6 minute',
+    cerereLegata: 'cerere-generala',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
