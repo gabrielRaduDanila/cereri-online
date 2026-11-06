@@ -142,6 +142,16 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '6 minute',
     cerereLegata: 'cerere-generala',
   },
+  {
+    slug: 'cum-contesti-amenda-rutiera-termen-si-procedura',
+    titlu:
+      'Cum contești o amendă rutieră în 2026: termenul de 15 zile și procedura corectă',
+    descriere:
+      'Ghid pas cu pas pentru contestarea procesului-verbal de contravenție rutieră: termenul de 15 zile, judecătoria competentă, taxa de timbru, temeiul legal și greșelile care duc la respingerea plângerii.',
+    dataPublicare: '2026-11-06',
+    timpCitire: '7 minute',
+    cerereLegata: 'cerere-generala',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
