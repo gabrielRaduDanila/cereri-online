@@ -145,8 +145,8 @@ export default function PaginaDespre() {
         </h2>
         <p className="text-slate-700 mb-5">
           Lipsește o cerere de care ai avea nevoie? Ai găsit o eroare în textul
-          unui document? Ai o sugestie de îmbunătățire? Scrie-mi mai jos —
-          mesajele vin direct pe email-ul meu și citesc fiecare.
+          unui document? Ai o sugestie de îmbunătățire? Scrie-mi mai jos.
+          Mesajele ajung direct pe e-mailul meu și le citesc pe fiecare.
         </p>
         <FeedbackForm />
       </section>
