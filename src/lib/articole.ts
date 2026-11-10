@@ -152,6 +152,16 @@ export const ARTICOLE: ArticolMeta[] = [
     timpCitire: '7 minute',
     cerereLegata: 'cerere-generala',
   },
+  {
+    slug: 'declaratie-pe-propria-raspundere-model-si-cand-se-foloseste',
+    titlu:
+      'Declarație pe propria răspundere: model, structură și situațiile în care e cerută',
+    descriere:
+      'Ce este o declarație pe propria răspundere, ce trebuie să conțină ca să fie valabilă juridic, situațiile uzuale în care e cerută (ANAF, primărie, bancă, școală, angajator) și consecințele penale ale declarațiilor false.',
+    dataPublicare: '2026-11-10',
+    timpCitire: '5 minute',
+    cerereLegata: 'cerere-generala',
+  },
 ]
 
 export function getArticol(slug: string): ArticolMeta | undefined {
